@@ -17,11 +17,23 @@ public class rvs_row_and_thn_clmn_of_mtrx {
         //row variable should be constant for each iteration
         //that's why i got the limit of row
         //like i=0 is reversed first then i=2 then i=3
+
+
+
+
+
+        /*
+        row constant
+        two pointer in column
+
+
+         */
+
         for (int i = 0; i < 3; i++) {
             //applying two pointer
             //in row
             int low=0;
-            int high=arr[0].length-1;
+            int high=arr[0].length-1;//column reversing therefore limit of column
             while(low<=high)
             {
                 int temp=arr[i][low];
@@ -45,6 +57,11 @@ public class rvs_row_and_thn_clmn_of_mtrx {
         //in column printing,column limit is given to i
         //working i=0;0th clmn will be reversed then 1th coloum reverse
 
+        /*
+        column constant
+        2 pointer on rows
+        thats why limit of row in high
+         */
         for (int i = 0; i < 4; i++) {
             //two pointer applying in column
             int low=0;
